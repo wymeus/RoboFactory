@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RoboFactory
 {
-    public static class DonjonAPI
+    public static class DonjonApi
     {
         public static async Task<List<string>> GetRandomNamesAsync(string type = "Orcish+Male", int amount = 1)
         {
