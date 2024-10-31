@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RoboFactory
 {
-    public static class Robohash
+    public static class RoboHashApi
     {
         public static async Task<Bitmap?> GenerateAsync(string hash)
         {
