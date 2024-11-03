@@ -29,10 +29,13 @@
         private void InitializeComponent()
         {
             pnHeader = new Panel();
-            picAvatar = new PictureBox();
-            lbName = new Label();
             lbSubtitle = new Label();
+            lbName = new Label();
+            pnFooter = new Panel();
+            btnGenerate = new Button();
+            picAvatar = new PictureBox();
             pnHeader.SuspendLayout();
+            pnFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picAvatar).BeginInit();
             SuspendLayout();
             // 
@@ -46,25 +49,6 @@
             pnHeader.Size = new Size(300, 80);
             pnHeader.TabIndex = 1;
             // 
-            // picAvatar
-            // 
-            picAvatar.Dock = DockStyle.Fill;
-            picAvatar.Location = new Point(0, 80);
-            picAvatar.Name = "picAvatar";
-            picAvatar.Size = new Size(300, 300);
-            picAvatar.TabIndex = 2;
-            picAvatar.TabStop = false;
-            // 
-            // lbName
-            // 
-            lbName.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            lbName.Location = new Point(12, 12);
-            lbName.Name = "lbName";
-            lbName.Size = new Size(276, 34);
-            lbName.TabIndex = 0;
-            lbName.Text = "Lorem ipsum";
-            lbName.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // lbSubtitle
             // 
             lbSubtitle.Font = new Font("Segoe UI", 10F);
@@ -76,17 +60,62 @@
             lbSubtitle.Text = "Lorem ipsum dolor sit amet";
             lbSubtitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // lbName
+            // 
+            lbName.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            lbName.Location = new Point(12, 12);
+            lbName.Name = "lbName";
+            lbName.Size = new Size(276, 34);
+            lbName.TabIndex = 0;
+            lbName.Text = "Lorem ipsum";
+            lbName.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pnFooter
+            // 
+            pnFooter.BackColor = Color.Silver;
+            pnFooter.Controls.Add(btnGenerate);
+            pnFooter.Dock = DockStyle.Bottom;
+            pnFooter.Location = new Point(0, 380);
+            pnFooter.Name = "pnFooter";
+            pnFooter.Size = new Size(300, 60);
+            pnFooter.TabIndex = 3;
+            // 
+            // btnGenerate
+            // 
+            btnGenerate.BackColor = Color.SkyBlue;
+            btnGenerate.Cursor = Cursors.Hand;
+            btnGenerate.FlatAppearance.BorderColor = Color.SteelBlue;
+            btnGenerate.FlatStyle = FlatStyle.Flat;
+            btnGenerate.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGenerate.Location = new Point(12, 9);
+            btnGenerate.Name = "btnGenerate";
+            btnGenerate.Size = new Size(276, 42);
+            btnGenerate.TabIndex = 0;
+            btnGenerate.Text = "Generate!";
+            btnGenerate.UseVisualStyleBackColor = false;
+            // 
+            // picAvatar
+            // 
+            picAvatar.Dock = DockStyle.Fill;
+            picAvatar.Location = new Point(0, 80);
+            picAvatar.Name = "picAvatar";
+            picAvatar.Size = new Size(300, 300);
+            picAvatar.TabIndex = 4;
+            picAvatar.TabStop = false;
+            // 
             // Main
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(300, 380);
+            ClientSize = new Size(300, 440);
             Controls.Add(picAvatar);
+            Controls.Add(pnFooter);
             Controls.Add(pnHeader);
             DoubleBuffered = true;
             Name = "Main";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RoboFactory";
             pnHeader.ResumeLayout(false);
+            pnFooter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picAvatar).EndInit();
             ResumeLayout(false);
         }
@@ -94,8 +123,10 @@
         #endregion
 
         private Panel pnHeader;
-        private PictureBox picAvatar;
         private Label lbName;
         private Label lbSubtitle;
+        private Panel pnFooter;
+        private PictureBox picAvatar;
+        private Button btnGenerate;
     }
 }
