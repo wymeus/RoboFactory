@@ -72,7 +72,7 @@
             // 
             // pnFooter
             // 
-            pnFooter.BackColor = Color.Silver;
+            pnFooter.BackColor = Color.LightGray;
             pnFooter.Controls.Add(btnGenerate);
             pnFooter.Dock = DockStyle.Bottom;
             pnFooter.Location = new Point(0, 380);
@@ -93,6 +93,7 @@
             btnGenerate.TabIndex = 0;
             btnGenerate.Text = "Generate!";
             btnGenerate.UseVisualStyleBackColor = false;
+            btnGenerate.Click += btnGenerate_Click;
             // 
             // picAvatar
             // 
@@ -111,6 +112,7 @@
             Controls.Add(pnFooter);
             Controls.Add(pnHeader);
             DoubleBuffered = true;
+            MaximizeBox = false;
             Name = "Main";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RoboFactory";
