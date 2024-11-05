@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             pnHeader = new Panel();
             lbSubtitle = new Label();
             lbName = new Label();
@@ -111,6 +112,7 @@
             Controls.Add(pnFooter);
             Controls.Add(pnHeader);
             DoubleBuffered = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Main";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RoboFactory";
