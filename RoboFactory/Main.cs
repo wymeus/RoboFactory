@@ -19,6 +19,7 @@ namespace RoboFactory
             // Update elements
             lbName.Text = robot.Name;
             picAvatar.Image = robot.Avatar;
+            lbSubtitle.Text = "Generated: " + robot.GeneratedAt.ToString("yyyy-MM-dd HH:mm:ss");
             // Enable the button and revert style back
             btnGenerate.Text = "Generate!";
             btnGenerate.BackColor = Color.SkyBlue;
