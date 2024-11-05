@@ -58,7 +58,7 @@
             lbSubtitle.Name = "lbSubtitle";
             lbSubtitle.Size = new Size(276, 23);
             lbSubtitle.TabIndex = 1;
-            lbSubtitle.Text = "Lorem ipsum dolor sit amet";
+            lbSubtitle.Text = "Press [Generate] to begin";
             lbSubtitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lbName
@@ -68,12 +68,12 @@
             lbName.Name = "lbName";
             lbName.Size = new Size(276, 34);
             lbName.TabIndex = 0;
-            lbName.Text = "Lorem ipsum";
+            lbName.Text = "RoboFactory";
             lbName.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnFooter
             // 
-            pnFooter.BackColor = Color.Silver;
+            pnFooter.BackColor = Color.LightGray;
             pnFooter.Controls.Add(btnGenerate);
             pnFooter.Dock = DockStyle.Bottom;
             pnFooter.Location = new Point(0, 380);
@@ -94,6 +94,7 @@
             btnGenerate.TabIndex = 0;
             btnGenerate.Text = "Generate!";
             btnGenerate.UseVisualStyleBackColor = false;
+            btnGenerate.Click += btnGenerate_Click;
             // 
             // picAvatar
             // 
@@ -112,6 +113,8 @@
             Controls.Add(pnFooter);
             Controls.Add(pnHeader);
             DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Main";
             StartPosition = FormStartPosition.CenterScreen;
