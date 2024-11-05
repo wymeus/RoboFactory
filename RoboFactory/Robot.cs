@@ -11,18 +11,23 @@ namespace RoboFactory
     {
         public string Name { get; private set; }
         public Bitmap? Avatar { get; private set; }
+        public DateTime GeneratedAt { get; private set; }
 
         public Robot(string name, Bitmap avatar)
         {
             // Assign
             Name = name;
             Avatar = avatar;
+            // Assign creation datetime
+            GeneratedAt = DateTime.Now;
         }
 
         public Robot(string name)
         {
             // Assign
             Name = name;
+            // Assign creation datetime
+            GeneratedAt = DateTime.Now;
         }
 
         public void Dispose()
