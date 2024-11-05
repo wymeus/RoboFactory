@@ -112,6 +112,7 @@
             Controls.Add(pnFooter);
             Controls.Add(pnHeader);
             DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "Main";
             StartPosition = FormStartPosition.CenterScreen;
