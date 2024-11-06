@@ -1,6 +1,6 @@
 namespace RoboFactory.Tests
 {
-    public class Tests
+    public class DonjonApiTests
     {
         private List<string> runonceSingleNameResult;
         private List<string> runonceFiveNamesResult;
