@@ -30,7 +30,7 @@ namespace RoboFactory.Tests
         }
 
         [Test]
-        public void Generate_ShouldReturnBitmao()
+        public void Generate_ShouldReturnBitmap()
         {
             // Assert
             Assert.That(imageResult, Is.InstanceOf<Bitmap>());
